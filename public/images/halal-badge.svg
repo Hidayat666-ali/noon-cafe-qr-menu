@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <circle cx="50" cy="50" r="46" fill="#064E3B" stroke="#10B981" stroke-width="3" />
+  <circle cx="50" cy="50" r="41" fill="none" stroke="#059669" stroke-width="1" stroke-dasharray="3 3" />
+  <!-- Arabic Halal text حلال -->
+  <text x="50" y="55" font-family="'Amiri', 'Traditional Arabic', serif" font-weight="700" font-size="28" fill="#ECFDF5" text-anchor="middle">حلال</text>
+  <!-- English 100% HALAL -->
+  <text x="50" y="74" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9" fill="#34D399" text-anchor="middle" letter-spacing="1.5">100% HALAL</text>
+</svg>

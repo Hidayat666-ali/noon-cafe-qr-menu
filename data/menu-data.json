@@ -1,0 +1,353 @@
+{
+  "settings": {
+    "name": "NOON CAFE",
+    "arabicName": "ن",
+    "tagline": "Cafe & Eatery",
+    "welcomeSubtext": "What's your craving?",
+    "address": "Shop No. 2, Survey No. 25, Near Darga Khaliz Khan, HMBS Colony",
+    "area": "Kismatpur, Rajendra Nagar",
+    "city": "Hyderabad",
+    "instagramUrl": "https://www.instagram.com/noonscafe/",
+    "contactNumber": "+91 98765 43210",
+    "googleMapsUrl": "https://maps.google.com/?q=Noon+Cafe+Kismatpur+Hyderabad",
+    "halalCertified": true,
+    "currencySymbol": "₹"
+  },
+  "categories": [
+    {
+      "id": "cat-crave-corner",
+      "name": "CRAVE CORNER",
+      "slug": "crave-corner",
+      "order": 1,
+      "isActive": true
+    },
+    {
+      "id": "cat-hot-sip",
+      "name": "HOT SIP",
+      "slug": "hot-sip",
+      "order": 2,
+      "isActive": true
+    },
+    {
+      "id": "cat-crushers",
+      "name": "CRUSHERS",
+      "slug": "crushers",
+      "order": 3,
+      "isActive": true
+    },
+    {
+      "id": "cat-coolers",
+      "name": "COOLERS",
+      "slug": "coolers",
+      "order": 4,
+      "isActive": true
+    },
+    {
+      "id": "cat-shakes-frappes",
+      "name": "SHAKES & FRAPPÉS",
+      "slug": "shakes-frappes",
+      "order": 5,
+      "isActive": true
+    },
+    {
+      "id": "cat-noons-special",
+      "name": "NOON'S SPECIAL",
+      "slug": "noons-special",
+      "order": 6,
+      "isActive": true
+    }
+  ],
+  "items": [
+    {
+      "id": "item-plain-salted-fries",
+      "name": "Plain Salted Fries",
+      "price": 99,
+      "categoryId": "cat-crave-corner",
+      "image": "/images/items/plain-salted-fries.jpg",
+      "isNew": true,
+      "isAvailable": true,
+      "order": 1
+    },
+    {
+      "id": "item-tangy-garlic-fries",
+      "name": "Tangy Garlic Fries",
+      "price": 250,
+      "categoryId": "cat-crave-corner",
+      "image": "/images/items/tangy-garlic-fries.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 2
+    },
+    {
+      "id": "item-club-sandwich",
+      "name": "Club Sandwich",
+      "price": 250,
+      "categoryId": "cat-crave-corner",
+      "image": "/images/items/club-sandwich.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 3
+    },
+    {
+      "id": "item-student-combo-wrap",
+      "name": "Student Combo Wrap",
+      "price": 99,
+      "categoryId": "cat-crave-corner",
+      "image": "/images/items/student-combo-wrap.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 4
+    },
+    {
+      "id": "item-3-pcs-samosa",
+      "name": "3 pcs Samosa",
+      "price": 20,
+      "categoryId": "cat-crave-corner",
+      "image": "/images/items/3-pcs-samosa.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 5
+    },
+    {
+      "id": "item-3-pcs-chicken-strips-broasted",
+      "name": "3 pcs Chicken Strips Broasted",
+      "price": 150,
+      "categoryId": "cat-crave-corner",
+      "image": "/images/items/3-pcs-chicken-strips-broasted.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 6
+    },
+    {
+      "id": "item-spicy-street-maggie",
+      "name": "Spicy Street Maggie",
+      "price": 75,
+      "categoryId": "cat-crave-corner",
+      "image": "/images/items/spicy-street-maggie.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 7
+    },
+    {
+      "id": "item-tea",
+      "name": "Tea",
+      "price": 15,
+      "categoryId": "cat-hot-sip",
+      "image": "/images/items/tea.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 1
+    },
+    {
+      "id": "item-royal-masala-tea",
+      "name": "Royal Masala Tea",
+      "price": 25,
+      "categoryId": "cat-hot-sip",
+      "image": "/images/items/royal-masala-tea.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 2
+    },
+    {
+      "id": "item-decoction",
+      "name": "Decoction",
+      "price": 12,
+      "categoryId": "cat-hot-sip",
+      "image": "/images/items/decoction.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 3
+    },
+    {
+      "id": "item-shahi-sulemani",
+      "name": "Shahi Sulemani",
+      "price": 20,
+      "categoryId": "cat-hot-sip",
+      "image": "/images/items/shahi-sulemani.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 4
+    },
+    {
+      "id": "item-hot-coffee",
+      "name": "Hot Coffee",
+      "price": 30,
+      "categoryId": "cat-hot-sip",
+      "image": "/images/items/hot-coffee.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 5
+    },
+    {
+      "id": "item-lychee-frostbite",
+      "name": "Lychee Frostbite",
+      "price": 150,
+      "categoryId": "cat-crushers",
+      "image": "/images/items/lychee-frostbite.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 1
+    },
+    {
+      "id": "item-blue-chill-lagoon",
+      "name": "Blue Chill Lagoon",
+      "price": 150,
+      "categoryId": "cat-crushers",
+      "image": "/images/items/blue-chill-lagoon.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 2
+    },
+    {
+      "id": "item-berry-ice-blast",
+      "name": "Berry Ice Blast",
+      "price": 150,
+      "categoryId": "cat-crushers",
+      "image": "/images/items/berry-ice-blast.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 3
+    },
+    {
+      "id": "item-passion-power-crush",
+      "name": "Passion Power Crush",
+      "price": 150,
+      "categoryId": "cat-crushers",
+      "image": "/images/items/passion-power-crush.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 4
+    },
+    {
+      "id": "item-melon-glacier",
+      "name": "Melon Glacier",
+      "price": 150,
+      "categoryId": "cat-crushers",
+      "image": "/images/items/melon-glacier.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 5
+    },
+    {
+      "id": "item-sunrise-crush",
+      "name": "Sunrise Crush",
+      "price": 150,
+      "categoryId": "cat-crushers",
+      "image": "/images/items/sunrise-crush.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 6
+    },
+    {
+      "id": "item-mango-melt",
+      "name": "Mango Melt",
+      "price": 59,
+      "categoryId": "cat-coolers",
+      "image": "/images/items/mango-melt.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 1
+    },
+    {
+      "id": "item-raw-mango-rush",
+      "name": "Raw Mango Rush",
+      "price": 59,
+      "categoryId": "cat-coolers",
+      "image": "/images/items/raw-mango-rush.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 2
+    },
+    {
+      "id": "item-peach-breeze",
+      "name": "Peach Breeze",
+      "price": 59,
+      "categoryId": "cat-coolers",
+      "image": "/images/items/peach-breeze.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 3
+    },
+    {
+      "id": "item-blackcurrant-blast",
+      "name": "Blackcurrant Blast",
+      "price": 59,
+      "categoryId": "cat-coolers",
+      "image": "/images/items/blackcurrant-blast.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 4
+    },
+    {
+      "id": "item-cold-coffee",
+      "name": "Cold Coffee",
+      "price": 150,
+      "categoryId": "cat-shakes-frappes",
+      "image": "/images/items/cold-coffee.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 1
+    },
+    {
+      "id": "item-banana-shake",
+      "name": "Banana Shake",
+      "price": 150,
+      "categoryId": "cat-shakes-frappes",
+      "image": "/images/items/banana-shake.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 2
+    },
+    {
+      "id": "item-mocha-frape",
+      "name": "Mocha Frape",
+      "price": 150,
+      "categoryId": "cat-shakes-frappes",
+      "image": "/images/items/mocha-frape.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 3
+    },
+    {
+      "id": "item-iced-coffee",
+      "name": "Iced Coffee",
+      "price": 120,
+      "categoryId": "cat-shakes-frappes",
+      "image": "/images/items/iced-coffee.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 4
+    },
+    {
+      "id": "item-coffee-mousse",
+      "name": "Coffee Mousse",
+      "price": 80,
+      "categoryId": "cat-noons-special",
+      "image": "/images/items/coffee-mousse.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 1
+    },
+    {
+      "id": "item-nutella-bread",
+      "name": "Nutella Bread",
+      "price": 75,
+      "categoryId": "cat-noons-special",
+      "image": "/images/items/nutella-bread.jpg",
+      "isNew": false,
+      "isAvailable": true,
+      "order": 2
+    }
+  ],
+  "offers": [
+    {
+      "id": "offer-1791134722799",
+      "title": "Weekend Special: Samosa & Tea Combo",
+      "description": "Pair hot crispy samosas with rich Royal Masala Tea!",
+      "validityText": "This Weekend",
+      "isActive": true,
+      "image": ""
+    }
+  ],
+  "version": 1791134736677
+}

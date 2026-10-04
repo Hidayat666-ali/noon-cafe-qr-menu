@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24242A" />
+      <stop offset="100%" stop-color="#141416" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bgGrad)" />
+  <circle cx="200" cy="200" r="140" fill="#1C1C20" stroke="#2E2E36" stroke-width="2" />
+  <circle cx="200" cy="200" r="115" fill="#24242A" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="4 4" />
+  
+  <!-- Stylized plate and cutlery -->
+  <g transform="translate(140, 140) scale(1.2)" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Plate -->
+    <circle cx="50" cy="50" r="36" />
+    <!-- Cloche dome or fork and spoon -->
+    <path d="M 28 50 C 28 35, 72 35, 72 50 Z" fill="rgba(245, 158, 11, 0.15)" />
+    <path d="M 50 30 L 50 25" />
+    <circle cx="50" cy="23" r="3" fill="#F59E0B" />
+    <path d="M 24 54 L 76 54" />
+  </g>
+  
+  <text x="200" y="305" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#9CA3AF" text-anchor="middle" letter-spacing="2">NOON CAFE</text>
+  <text x="200" y="325" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="11" fill="#6B7280" text-anchor="middle" letter-spacing="1">FRESH CRAVING</text>
+</svg>
