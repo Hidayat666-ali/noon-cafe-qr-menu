@@ -44,17 +44,6 @@ export default function CategoryNav({
               ref={isActive ? activeBtnRef : null}
               onClick={() => {
                 onSelectCategory(cat.id);
-                // Also scroll page section into view
-                const el = document.getElementById(cat.id);
-                if (el) {
-                  const headerOffset = 160;
-                  const elementPosition = el.getBoundingClientRect().top;
-                  const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                  window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth',
-                  });
-                }
               }}
               className={`flex-shrink-0 px-3.5 py-2 rounded-xl text-xs font-bold tracking-wider uppercase transition-all duration-200 snap-center select-none active:scale-95 ${
                 isActive

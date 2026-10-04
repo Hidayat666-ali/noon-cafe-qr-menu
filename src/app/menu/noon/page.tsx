@@ -1,6 +1,5 @@
 'use client';
-
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import Header from '@/components/Header';
 import CategoryNav from '@/components/CategoryNav';
 import ItemCard from '@/components/ItemCard';
@@ -10,7 +9,7 @@ import OffersBanner from '@/components/OffersBanner';
 import QrModal from '@/components/QrModal';
 import { useMenu } from '@/lib/menu-context';
 import { MenuItem } from '@/lib/types';
-import { Search, UtensilsCrossed, Sparkles } from 'lucide-react';
+import { Search, UtensilsCrossed, Sparkles, ArrowUp } from 'lucide-react';
 
 export default function NoonMenuPage() {
   const {
@@ -24,6 +23,9 @@ export default function NoonMenuPage() {
 
   const [searchQuery, setSearchQuery] = useState('');
   const [isQrOpen, setIsQrOpen] = useState(false);
+  const [showBackToTop, setShowBackToTop] = useState(false);
+  const isClickingCategoryRef = useRef(false);
+  const clickTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const { settings, categories, items, offers } = data;
 
@@ -59,6 +61,56 @@ export default function NoonMenuPage() {
 
     return result;
   }, [activeCategories, items, searchQuery]);
+
+  // ScrollSpy to sync active category during scrolling
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 400);
+
+      if (isClickingCategoryRef.current || searchQuery) return;
+
+      const headerOffset = 220;
+      let currentActive = activeCategories[0]?.id || activeCategory;
+
+      for (const cat of activeCategories) {
+        const el = document.getElementById(cat.id);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= headerOffset) {
+            currentActive = cat.id;
+          }
+        }
+      }
+
+      if (currentActive !== activeCategory) {
+        setActiveCategory(currentActive);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [activeCategories, activeCategory, searchQuery, setActiveCategory]);
+
+  const handleSelectCategory = (catId: string) => {
+    isClickingCategoryRef.current = true;
+    if (clickTimeoutRef.current) clearTimeout(clickTimeoutRef.current);
+    setActiveCategory(catId);
+
+    const el = document.getElementById(catId);
+    if (el) {
+      const headerOffset = 160;
+      const elementPosition = el.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+
+    clickTimeoutRef.current = setTimeout(() => {
+      isClickingCategoryRef.current = false;
+    }, 800);
+  };
 
   return (
     <div className="min-h-screen bg-noon-dark text-gray-100 flex flex-col max-w-lg mx-auto shadow-2xl relative border-x border-noon-border/30">
@@ -111,7 +163,7 @@ export default function NoonMenuPage() {
         <CategoryNav
           categories={activeCategories}
           activeCategoryId={activeCategory}
-          onSelectCategory={setActiveCategory}
+          onSelectCategory={handleSelectCategory}
         />
       )}
 
@@ -220,6 +272,17 @@ export default function NoonMenuPage() {
           </button>
         </div>
       </footer>
+
+      {/* Floating Back to Top Button */}
+      {showBackToTop && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          aria-label="Back to top"
+          className="fixed bottom-6 right-6 z-40 w-11 h-11 rounded-full bg-noon-gold text-noon-dark shadow-xl shadow-noon-gold/30 flex items-center justify-center font-bold transition-all duration-300 animate-fade-in hover:scale-110 active:scale-95 border border-amber-300"
+        >
+          <ArrowUp className="w-5 h-5 stroke-[2.5]" />
+        </button>
+      )}
 
       {/* Item Detail Modal */}
       <ItemDetailModal

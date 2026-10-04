@@ -31,7 +31,8 @@ const config: Config = {
         }
       },
       fontFamily: {
-        arabic: ['Noto Sans Arabic', 'Traditional Arabic', 'sans-serif'],
+        sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+        arabic: ['Amiri', '"Noto Sans Arabic"', 'Traditional Arabic', 'serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.25s ease-out',
